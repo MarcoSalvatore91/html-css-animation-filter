@@ -105,10 +105,10 @@
 
 .ex-10-icon {
     font-size: 60px;
-    animation: rotazione 1s infinite linear reverse;
+    animation: circle 1s infinite linear reverse;
 }
 
-@keyframes rotazione {
+@keyframes circle {
     from {
         transform: rotate(0deg);
     }
@@ -120,6 +120,24 @@
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: circle-hover 2s linear;
+}
+
+@keyframes circle-hover {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(300deg);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
